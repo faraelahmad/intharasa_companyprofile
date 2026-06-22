@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intha Rasa — Kuliner Tradisional Berkualitas</title>
+    <meta name="description" content="INTHA RASA menghadirkan kue-kue tradisional pilihan yang dibuat dengan resep turun-temurun, cinta, dan bahan-bahan berkualitas terbaik.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">INTHA <span>RASA</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Beranda</a></li>
+            <li><a href="#tentang" class="nav-link">Tentang</a></li>
+            <li><a href="#produk" class="nav-link">Produk</a></li>
+            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shape shape-1"></div>
+        <div class="hero-bg-shape shape-2"></div>
+        <div class="hero-bg-shape shape-3"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Cita Rasa <em>Autentik</em><br>dari Dapur Intha Rasa
+            </h1>
+            <p class="hero-desc">
+                menghadirkan kue-kue tradisional pilihan yang dibuat dengan resep turun-temurun, cinta, dan bahan-bahan berkualitas terbaik.
+            </p>
+            <div class="hero-actions">
+                <a href="#produk" class="btn btn-primary">Lihat Produk</a>
+                <a href="#tentang" class="btn btn-outline">Tentang Kami</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <img src="canai.png" alt="Roti Canai Original" class="hero-highlight-img">
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-num" data-target="6">0</span>
+                <span class="stat-label">Produk Unggulan</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="4">0</span>
+                <span class="stat-label">Mitra Toko</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-suffix="%">100%</span>
+                <span class="stat-label">Buatan Tangan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SECTION -->
+    <section id="tentang" class="tentang">
+        <div class="tentang-deco deco-left"></div>
+        <div class="tentang-deco deco-right"></div>
+
+        <div class="container">
+            <!-- Baris atas: foto sejajar dengan cerita -->
+            <div class="tentang-grid">
+                <!-- Foto & identitas owner -->
+                <div class="profile-owner reveal-left">
+                    <div class="profile-photo-wrap">
+                        <img src="ibu.png" alt="Profil Ibu Indriani">
+                    </div>
+                    <div class="profile-owner-info">
+                        <h3>Indriani</h3>
+                        <p class="profile-title">Pendiri & Pemilik INTHA RASA</p>
+                        <blockquote>
+                            "Setiap kue yang kami buat mengandung cerita, kenangan, dan cinta yang tulus."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Judul & paragraf cerita -->
+                <div class="tentang-story reveal-right">
+                    <div class="section-label">Tentang Kami</div>
+                    <h2 class="section-title">Kisah di Balik<br>Setiap Gigitan</h2>
+                    <p>INTHA RASA lahir dari kecintaan Ibu Indriani terhadap kuliner tradisional Nusantara. Berawal dari dapur rumahan, usaha ini tumbuh dengan semangat melestarikan cita rasa leluhur yang kian langka di era modern.</p>
+                    <p>Setiap produk kami dibuat dengan tangan menggunakan bahan-bahan pilihan tanpa pengawet buatan, menghadirkan pengalaman kuliner yang otentik, sehat, dan penuh kenangan.</p>
+                </div>
+            </div>
+
+            <!-- Baris bawah: visi misi full width -->
+            <div class="visi-misi reveal-up">
+                <div class="vm-tab">
+                    <button class="vm-btn active" data-tab="visi">Visi</button>
+                    <button class="vm-btn" data-tab="misi">Misi</button>
+                </div>
+                <div class="vm-content" id="visiContent">
+                    <p>Menjadikan INTHA RASA sebagai brand kuliner tradisional yang dikenal luas, dengan membawa cita rasa warisan keluarga yang dikembangkan sendiri dan disalurkan ke meja makan lebih banyak orang.</p>
+                </div>
+                <div class="vm-content hidden" id="misiContent">
+                    <ul class="misi-list">
+                        <li>Menjaga cita rasa asli resep turun-temurun sebagai identitas khas INTHA RASA</li>
+                        <li>Menyajikan Roti Canai dan Deram-Deram berkualitas dengan rasa yang konsisten</li>
+                        <li>Melestarikan kuliner tradisional agar tetap dikenal lintas generasi</li>
+                        <li>Mengembangkan UMKM berlandaskan nilai kekeluargaan dan keberlanjutan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUK SECTION -->
+    <section id="produk" class="produk">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-label">Menu Pilihan</div>
+                <h2 class="section-title">Produk Unggulan Kami</h2>
+                <p>Kue dan camilan tradisional yang dibuat dengan resep asli dan cinta, tersedia di berbagai mitra toko kami.</p>
+            </div>
+
+            <div class="produk-grid">
+
+                <div class="produk-card reveal-up" data-delay="0">
+                    <div class="produk-image">
+                        <img src="roticanai.jpeg" alt="Roti Canai Original">
+                    </div>
+                    <div class="produk-badge badge-all">Semua Toko</div>
+                    <h3>Roti Canai (Prata) Original Frozen</h3>
+                    <p>Roti canai klasik dengan tekstur berlapis yang renyah di luar namun lembut di dalam. Dibuat dari resep autentik keluarga, siap dimasak langsung dari freezer tanpa ribet.</p>
+                    <div class="produk-availability">
+                        <span class="avail-label">Tersedia di:</span>
+                        <span class="avail-info">Semua mitra toko</span>
+                    </div>
+                </div>
+
+                <div class="produk-card reveal-up" data-delay="100">
+                    <div class="produk-image">
+                        <img src="cota.png" alt="Cota Prata Coklat">
+                    </div>
+                    <div class="produk-badge badge-dsayur">D'Sayur Pemuda</div>
+                    <h3>Cota (Prata Rasa Coklat) Frozen</h3>
+                    <p>Perpaduan lembutnya prata dengan isian coklat yang manis dan meleleh. Cocok untuk camilan anak-anak hingga dewasa yang suka sesuatu yang manis dan menggiurkan.</p>
+                    <div class="produk-availability limited">
+                        <span class="avail-label">⚠ Khusus di :</span>
+                        <span class="avail-info">D'Sayur Cabang Pemuda</span>
+                    </div>
+                </div>
+
+                <div class="produk-card reveal-up" data-delay="200">
+                    <div class="produk-image">
+                        <img src="mozata.png" alt="Mozata Prata Keju Mozzarella">
+                    </div>
+                    <div class="produk-badge badge-dsayur">D'Sayur Pemuda</div>
+                    <h3>Mozata (Prata Rasa Keju Mozzarella) Frozen</h3>
+                    <p>Prata gurih dengan isian keju mozzarella yang stretchy dan creamy. Perpaduan sempurna antara tekstur prata yang renyah dengan kelezatan keju yang meleleh di setiap gigitan.</p>
+                    <div class="produk-availability limited">
+                        <span class="avail-label">⚠ Khusus di :</span>
+                        <span class="avail-info">D'Sayur Cabang Pemuda</span>
+                    </div>
+                </div>
+
+                <div class="produk-card reveal-up" data-delay="0">
+                    <div class="produk-image">
+                        <img src="samota.jpeg" alt="Samota Prata Isi Kari">
+                    </div>
+                    <div class="produk-badge badge-all">Semua Toko</div>
+                    <h3>Samota (Prata Isi Kentang, Wortel & Ayam Kari) Frozen</h3>
+                    <p>Prata dengan isian lezat berupa kentang, wortel, dan ayam yang dimasak dengan bumbu kari khas. Sajian yang mengenyangkan dengan cita rasa rempah yang kaya dan autentik.</p>
+                    <div class="produk-availability">
+                        <span class="avail-label">Tersedia di :</span>
+                        <span class="avail-info">Semua mitra toko</span>
+                    </div>
+                </div>
+
+                <div class="produk-card reveal-up" data-delay="100">
+                    <div class="produk-image">
+                        <img src="kuederam.png" alt="Kue Deram-Deram">
+                    </div>
+                    <div class="produk-badge badge-dsayur">D'Sayur Pemuda</div>
+                    <h3>Kue Deram-Deram</h3>
+                    <p>Kue tradisional khas Pulau Penyengat yang dibuat dengan resep turun-temurun keluarga. Autentik, unik, dan penuh cita rasa. Bukti nyata bahwa warisan leluhur layak untuk terus dinikmati.</p>
+                    <div class="produk-availability limited">
+                        <span class="avail-label">⚠ Khusus di :</span>
+                        <span class="avail-info">D'Sayur Cabang Pemuda</span>
+                    </div>
+                </div>
+
+                <div class="produk-card reveal-up" data-delay="200">
+                    <div class="produk-image">
+                        <img src="bumbu kari.jpeg" alt="Bumbu Kari Frozen">
+                    </div>
+                    <div class="produk-badge badge-all">Semua Toko</div>
+                    <h3>Bumbu Kari Frozen</h3>
+                    <p>Bumbu kari racikan sendiri dengan perpaduan rempah pilihan yang kaya rasa. Praktis dan siap pakai, menghadirkan cita rasa masakan kari yang autentik langsung di dapur rumah.</p>
+                    <div class="produk-availability">
+                        <span class="avail-label">Tersedia di :</span>
+                        <span class="avail-info">Semua mitra toko</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="produk-note reveal-up">
+                <span class="note-icon"><span class="material-symbols-outlined material-icon">info</span></span>
+                <p><strong>Cota, Mozata, dan Kue Deram-Deram</strong> hanya tersedia di <strong>D'Sayur Cabang Pemuda</strong>. Hubungi kami untuk informasi lebih lanjut.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="kontak">
+        <div class="kontak-top-wave"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-label">Temukan Kami</div>
+                <h2 class="section-title">Lokasi Penjualan</h2>
+                <p>Produk INTHA RASA tersedia di mitra toko terpercaya kami. Kunjungi dan rasakan sendiri Kelezatannya !</p>
+            </div>
+
+            <div class="kontak-grid">
+
+                <div class="toko-card reveal-up" data-delay="0">
+                    <div class="toko-icon"><span class="material-symbols-outlined icon-lg">shopping_cart</span></div>
+                    <h3>Swalayan Pasaraya Bintan 21</h3>
+                    <p class="toko-alamat">Jl. Ir. Sutami, Jl. Hutan Lindung No.5, Tj. Pinang Timur, Kec. Bukit Bestari, Kota Tanjung Pinang, Kepulauan Riau 29112</p>
+                    <a href="https://maps.google.com/?q=Swalayan+Pasaraya+Bintan+21+Tanjung+Pinang" target="_blank" rel="noopener" class="maps-link"><span class="material-symbols-outlined icon-sm">place</span> Lihat di Maps</a>
+                </div>
+
+                <div class="toko-card reveal-up dsayur-card" data-delay="100">
+                    <div class="toko-icon"><span class="material-symbols-outlined icon-lg">local_grocery_store</span></div>
+                    <h3>D'Sayur TPI</h3>
+                    <div class="toko-cabang">
+                        <div class="cabang-item">
+                            <span class="cabang-name"><span class="material-symbols-outlined icon-sm">push_pin</span> Cabang Batu 8</span>
+                            <p>Jl. Raja H. Fisabililah No.7, Batu 8 Atas, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29124</p>
+                        </div>
+                        <div class="cabang-item">
+                            <span class="cabang-name"><span class="material-symbols-outlined icon-sm">push_pin</span> Cabang Bintan Center</span>
+                            <p>Jl. Bintan Center No.49-50 Blok C, Air Raja, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29125</p>
+                        </div>
+                        <div class="cabang-item highlight-cabang">
+                            <span class="cabang-name"><span class="material-symbols-outlined icon-sm">star</span> Cabang Pemuda <span class="cabang-badge">Eksklusif</span></span>
+                            <p>Jl. Pemuda No. 1B, 2B, 3B, Tj. Ayun Sakti, Kec. Bukit Bestari, Kota Tanjung Pinang, Kepulauan Riau 29113</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=D+Sayur+TPI+Tanjung+Pinang" target="_blank" rel="noopener" class="maps-link"><span class="material-symbols-outlined icon-sm">place</span> Lihat di Maps</a>
+                </div>
+
+                <div class="toko-card reveal-up" data-delay="200">
+                    <div class="toko-icon"><span class="material-symbols-outlined icon-lg">store</span></div>
+                    <h3>Swalayan Indocemerlang</h3>
+                    <p class="toko-alamat">Jl. Bandara, Pinang Kencana, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29125</p>
+                    <a href="https://maps.google.com/?q=Swalayan+Indocemerlang+Tanjung+Pinang" target="_blank" rel="noopener" class="maps-link"><span class="material-symbols-outlined icon-sm">place</span> Lihat di Maps</a>
+                </div>
+
+                <div class="toko-card reveal-up" data-delay="300">
+                    <div class="toko-icon"><span class="material-symbols-outlined icon-lg">storefront</span></div>
+                    <h3>Supermarket Al-Baik</h3>
+                    <p class="toko-alamat">Jl. Raja H. Fisabililah, Batu IX, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29444</p>
+                    <a href="https://maps.google.com/?q=Supermarket+Al+Baik+Tanjung+Pinang" target="_blank" rel="noopener" class="maps-link"><span class="material-symbols-outlined icon-sm">place</span> Lihat di Maps</a>
+                </div>
+
+            </div>
+
+            <!-- FORM ULASAN -->
+            <div class="ulasan-section reveal-up">
+                <div class="section-header" style="margin-bottom:2rem;">
+                    <div class="section-label">Suara Pelanggan</div>
+                    <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2rem);">Tinggalkan Ulasan Anda</h2>
+                    <p>Pengalaman Anda sangat berarti bagi kami untuk terus berkembang.</p>
+                </div>
+
+                <!-- Notifikasi -->
+                <div class="ulasan-notif" id="ulasanNotif" style="display:none;"></div>
+
+                <div class="ulasan-form-wrap">
+                    <div class="ulasan-field">
+                        <label class="ulasan-label" for="ulasanNama">Nama Lengkap <span class="req">*</span></label>
+                        <input class="ulasan-input" type="text" id="ulasanNama" placeholder="Masukkan nama Anda" maxlength="100">
+                    </div>
+
+                    <div class="ulasan-field">
+                        <label class="ulasan-label" for="ulasanProduk">Produk yang Dibeli <span class="req">*</span></label>
+                        <select class="ulasan-input ulasan-select" id="ulasanProduk">
+                            <option value="">-- Pilih Produk --</option>
+                            <option value="Roti Canai Original Frozen">Roti Canai Original Frozen</option>
+                            <option value="Cota (Prata Coklat) Frozen">Cota (Prata Coklat) Frozen</option>
+                            <option value="Mozata (Prata Mozzarella) Frozen">Mozata (Prata Mozzarella) Frozen</option>
+                            <option value="Samota (Prata Isi Kari) Frozen">Samota (Prata Isi Kari) Frozen</option>
+                            <option value="Kue Deram-Deram">Kue Deram-Deram</option>
+                            <option value="Bumbu Kari Frozen">Bumbu Kari Frozen</option>
+                        </select>
+                    </div>
+
+                    <div class="ulasan-field">
+                        <label class="ulasan-label">Rating <span class="req">*</span></label>
+                        <div class="star-rating" id="starRating">
+                            <span class="star" data-val="1">★</span>
+                            <span class="star" data-val="2">★</span>
+                            <span class="star" data-val="3">★</span>
+                            <span class="star" data-val="4">★</span>
+                            <span class="star" data-val="5">★</span>
+                        </div>
+                        <input type="hidden" id="ulasanRating" value="0">
+                    </div>
+
+                    <div class="ulasan-field">
+                        <label class="ulasan-label" for="ulasanPesan">Ulasan / Komentar <span class="req">*</span></label>
+                        <textarea class="ulasan-input ulasan-textarea" id="ulasanPesan" placeholder="Ceritakan pengalaman Anda dengan produk kami..." rows="4" maxlength="500"></textarea>
+                        <span class="char-count" id="charCount">0 / 500</span>
+                    </div>
+
+                    <button class="btn btn-primary ulasan-submit" id="ulasanSubmit" type="button">
+                        <span id="submitText">Kirim Ulasan</span>
+                        <span id="submitSpinner" style="display:none;">⏳ Mengirim...</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CTA Kontak -->
+            <div class="kontak-cta reveal-up">
+                <div class="cta-content">
+                    <h3>Ingin Memesan atau Bertanya?</h3>
+                    <p>Hubungi kami langsung melalui WhatsApp atau ikuti perkembangan produk terbaru di Instagram.</p>
+                </div>
+                <div class="cta-btns">
+                    <a href="https://wa.me/6281364747549" target="_blank" rel="noopener" class="btn btn-wa">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp Kami
+                    </a>
+                    <a href="https://instagram.com/intha.rasa" target="_blank" rel="noopener" class="btn btn-ig">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        Instagram Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">INTHA <span>RASA</span></a>
+                    <p>Kuliner Tradisional Berkualitas dari Tanjung Pinang, Kepulauan Riau.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#kontak">Lokasi & Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="footer-contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://instagram.com/intharasa" target="_blank" rel="noopener" class="footer-contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 INTHA RASA. Semua Hak Dilindungi.</p>
+                <p>Tanjung Pinang, Kepulauan Riau</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas"><span class="material-symbols-outlined">arrow_upward</span></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
